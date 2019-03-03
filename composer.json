@@ -1,0 +1,45 @@
+{
+    "name": "jagat/jax",
+    "description": "Jax admin is a component of laravel, vue, element build backend system.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jagat",
+            "email": "jagat.kc34@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "smartins/passport-multiauth": "~4.0",
+        "spatie/laravel-permission": "~2.12"
+    },
+    "require-dev": {
+        "orchestra/testbench": "~3.5",
+        "mockery/mockery": "^1.0",
+        "orchestra/database": "^3.5",
+        "doctrine/dbal": "^2.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jagat\\Jax\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jagat\\Jax\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jagat\\Jax\\Providers\\JaxServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability":"dev",
+    "prefer-stable": true
+}
